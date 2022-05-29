@@ -5,14 +5,14 @@ import org.hl7.fhir.r4.model.StringType;
 
 import ca.uhn.fhir.validation.ValidationResult;
 
-public class HapiValidatorExamples {
+public class HapiFhirValidatorExamples {
     public static void main(String[] args) throws ClassNotFoundException {
 
         SimpleFhirValidator simpleFhirValidator = new SimpleFhirR4Validator();
 
+        javaObjectExample(simpleFhirValidator);
         jsonExample(simpleFhirValidator);
         xmlExample(simpleFhirValidator);
-        jsonExample(simpleFhirValidator);
     }
 
     private static void xmlExample(SimpleFhirValidator simpleFhirValidator) {

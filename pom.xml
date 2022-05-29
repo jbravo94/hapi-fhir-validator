@@ -5,25 +5,22 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>dev.heinzl</groupId>
-  <artifactId>hapivalidator</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>hapifhirvalidator</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
 
-  <name>hapivalidator</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <name>HAPI FHIR Validator</name>
+  <url>https://heinzl.dev</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
-
-        <hapi.version>6.0.1</hapi.version>
-        <slf4j.version>1.7.36</slf4j.version>
-        <woodstox.version>1.7.36</woodstox.version>
+    <hapi.version>6.0.1</hapi.version>
+    <slf4j.version>1.7.36</slf4j.version>
+    <woodstox.version>6.2.5</woodstox.version>
   </properties>
 
   <dependencies>
-  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -124,7 +121,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-                <mainClass>dev.heinzl.HapiValidator</mainClass>
+                <mainClass>dev.heinzl.HapiFhirValidator</mainClass>
               </manifest>
           </archive>
         </configuration>
